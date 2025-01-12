@@ -4,18 +4,15 @@ import {
   QueryClientProvider,
 } from '@tanstack/react-query'
 import '../global.css'
+import { Stack } from "expo-router"
 
 const queryClient = new QueryClient()
 const RootLayout = () => {
   return (
     <QueryClientProvider client={queryClient}>
-
-      <View>
-        <Text>
-          Welcome Movies App
-        </Text>
-      </View>
-
+      <Stack screenOptions={{
+        headerShown: false
+      }} />
     </QueryClientProvider>
   )
 }
