@@ -63,7 +63,7 @@ const MovieHeader = ({ poster, originalTitle, title }: Props) => {
                 <Text className='font-normal'>
                     {originalTitle}
                 </Text>
-                <Text className='font-normal text-2xl'>
+                <Text className='font-black text-3xl'>
                     {title}
                 </Text>
             </View>
